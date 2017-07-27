@@ -26,11 +26,15 @@ var price=['price1','price2','price3','price4','price5'];
 	   	document.getElementById(watch[i]).style.backgroundImage=imageUrl;
 	   	document.getElementById(item[i]).innerHTML=content[i].model;
 	   	document.getElementById(rate[i]).innerHTML=content[i].rating;
-      document.getElementById(sale[i]).innerHTML="("+content[i].sold+")";
-      document.getElementById(price[i]).innerHTML=content[i].price;
+                document.getElementById(sale[i]).innerHTML="("+content[i].sold+")";
+                document.getElementById(price[i]).innerHTML=content[i].price;
         
 	   }
+
 var count=0;
+
+//Adding font awesome icons
+
 var stars = document.getElementsByClassName('star');
 for(var i = 0; i < stars.length; i++) {
     stars[i].classList.add("fa","fa-star");
